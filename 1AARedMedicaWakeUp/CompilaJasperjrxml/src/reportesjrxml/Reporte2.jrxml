@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version last-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_Letter" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e6ae553c-0893-4dd0-bca0-bd4ebdf2e863">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="redmedica"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Dataset1" uuid="6e20b401-9cd3-4f56-ae48-47675c588fd2">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="redmedica"/>
+		<property name="com.jaspersoft.studio.data.sql.tables" value="bWVkaWNhbWVudG9zICwxNTksMjA7cmVsdXN1bWVkaWNhbWVudG9zICwyMCw0NjtwZXJzb25hICwx&#xA;NTksMTI1Ow=="/>
+		<parameter name="TablaCorreo" class="java.lang.String"/>
+		<parameter name="slFactory" class="java.lang.Object"/>
+		<parameter name="slSchema" class="java.lang.Object"/>
+		<parameter name="LoggedInUser" class="java.lang.Object"/>
+		<parameter name="LoggedInUsername" class="java.lang.Object"/>
+		<queryString language="SQL">
+			<![CDATA[SELECT Correo,medicamentos.`Medicamento`,
+	FechaInicio,
+	FechaFin,
+	periodo
+FROM relusumedicamentos
+	 inner join medicamentos ON 
+	 medicamentos.`idMedicamentos` = relusumedicamentos.`Medicamento` 
+	 inner join persona ON 
+	 persona.`idPersona` = relusumedicamentos.`idUsuario` 
+WHERE
+	Correo=$P{TablaCorreo}]]>
+		</queryString>
+		<field name="Medicamento" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="FechaInicio" class="java.sql.Timestamp">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="FechaFin" class="java.sql.Timestamp">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="periodo" class="java.lang.Integer">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="Correo" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<group name="Medicamento">
+			<groupExpression><![CDATA[$F{Medicamento}]]></groupExpression>
+		</group>
+		<group name="FechaInicio">
+			<groupExpression><![CDATA[$F{FechaInicio}]]></groupExpression>
+		</group>
+		<group name="FechaFin">
+			<groupExpression><![CDATA[$F{FechaFin}]]></groupExpression>
+		</group>
+		<group name="periodo">
+			<groupExpression><![CDATA[$F{periodo}]]></groupExpression>
+		</group>
+	</subDataset>
+	<subDataset name="Dataset2" uuid="228890e7-86e6-4bca-a141-de5a2c018bd6">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="redmedica"/>
+		<parameter name="ListaCorreo" class="java.lang.String"/>
+		<queryString language="SQL">
+			<![CDATA[select enfermedades.enfermedad from enfermedades
+inner join enfermusu on enfermusu.Enfermedad=enfermedades.idenfermedades
+inner join persona on persona.idPersona=enfermusu.idUsuario
+where Correo=$P{ListaCorreo}]]>
+		</queryString>
+		<field name="enfermedad" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<group name="enfermedad">
+			<groupExpression><![CDATA[$F{enfermedad}]]></groupExpression>
+		</group>
+	</subDataset>
+	<subDataset name="Dataset3" uuid="01d495ac-537d-4357-b9c1-2c5e0679dca8">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="redmedica"/>
+		<parameter name="CorreoUsuario" class="java.lang.String"/>
+		<queryString language="SQL">
+			<![CDATA[select Ubicacion from emergencia inner join persona on persona.idPersona=emergencia.idUsuario
+where Correo=$P{CorreoUsuario}]]>
+		</queryString>
+		<field name="Ubicacion" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<group name="Ubicacion">
+			<groupExpression><![CDATA[$F{Ubicacion}]]></groupExpression>
+		</group>
+	</subDataset>
+	<parameter name="Usuario" class="java.lang.String"/>
+	<parameter name="slFactory" class="java.lang.Object"/>
+	<parameter name="slSchema" class="java.lang.Object"/>
+	<parameter name="LoggedInUser" class="java.lang.Object"/>
+	<parameter name="LoggedInUsername" class="java.lang.Object"/>
+	<parameter name="rutaimg" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[select Nombre,apellido, Correo,Fecha, Genero, Peso, Alergias, Estatura, Imagen, FechaRegistro
+from persona 
+where Correo=$P{Usuario}]]>
+	</queryString>
+	<field name="Nombre" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="apellido" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Correo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Fecha" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Genero" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Peso" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Alergias" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Estatura" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Imagen" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="FechaRegistro" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="Nombre">
+		<groupExpression><![CDATA[$F{Nombre}]]></groupExpression>
+	</group>
+	<group name="apellido">
+		<groupExpression><![CDATA[$F{apellido}]]></groupExpression>
+	</group>
+	<group name="Correo">
+		<groupExpression><![CDATA[$F{Correo}]]></groupExpression>
+	</group>
+	<group name="Fecha">
+		<groupExpression><![CDATA[$F{Fecha}]]></groupExpression>
+	</group>
+	<group name="Genero">
+		<groupExpression><![CDATA[$F{Genero}]]></groupExpression>
+	</group>
+	<group name="Peso">
+		<groupExpression><![CDATA[$F{Peso}]]></groupExpression>
+	</group>
+	<group name="Alergias">
+		<groupExpression><![CDATA[$F{Alergias}]]></groupExpression>
+	</group>
+	<group name="Estatura">
+		<groupExpression><![CDATA[$F{Estatura}]]></groupExpression>
+	</group>
+	<group name="Imagen">
+		<groupExpression><![CDATA[$F{Imagen}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="282" splitType="Stretch">
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="400" y="56" width="138" height="20" uuid="1636f5f5-5921-4d4c-869d-ed4638e4bef2"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="350" y="240" width="160" height="20" uuid="4ccbd46f-4e71-407b-b91f-b3194b4bbfda"/>
+				<textFieldExpression><![CDATA["Peso Actual: "+$F{Peso}+" kg"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="120" y="30" width="250" height="40" uuid="99984923-0a0e-4d13-9195-affce89d2302"/>
+				<textElement>
+					<font fontName="Arial" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Heart Prevent]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="20" y="120" width="513" height="20" uuid="66b7f9fb-0c5b-4b1f-a979-fc590ac237e8"/>
+				<textElement>
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Historial Medico de: "+$F{Nombre} +" "+$F{apellido}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="350" y="200" width="174" height="20" uuid="a70b2633-22ad-494f-a59a-c32469a4be98"/>
+				<textFieldExpression><![CDATA["Estatura Actual: "+$F{Estatura}+" m"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="160" width="200" height="20" uuid="2011171f-eb4e-4f63-b532-712850cc9ccb"/>
+				<textFieldExpression><![CDATA["Fecha de Nacimiento: "+$F{Fecha}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement stretchType="RelativeToBandHeight" isPrintRepeatedValues="false" x="50" y="220" width="200" height="60" isRemoveLineWhenBlank="true" uuid="57602ca9-ca28-434b-b0a5-73a052ab77cf"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset2" uuid="8c1ae615-6d50-49a4-9e07-20fdb1385f15">
+						<datasetParameter name="ListaCorreo">
+							<datasetParameterExpression><![CDATA[$P{Usuario}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="200" uuid="913d778f-a169-4f28-826a-9129fa66fac7">
+						<jr:columnHeader style="Table 2_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="200" height="30" uuid="51e8d600-77ce-4b8a-8323-266a306f9319"/>
+								<textElement textAlignment="Center">
+									<font fontName="Arial" size="12"/>
+								</textElement>
+								<text><![CDATA[Enfermedades:]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 2_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="200" height="30" uuid="d9c1a77a-1b2d-42f9-ad29-5a22def97f50"/>
+								<textElement textAlignment="Center">
+									<font fontName="Arial" size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{enfermedad}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<image>
+				<reportElement x="10" y="10" width="100" height="100" uuid="6332c5bf-e11e-4b26-92f3-bd7fdad000e3"/>
+				<imageExpression><![CDATA[new File($P{rutaimg},"logo.png")]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="350" y="160" width="194" height="20" uuid="46cd040d-fa6d-4d8c-924b-6be938b241d9"/>
+				<textFieldExpression><![CDATA["Fecha de Registro: "+$F{FechaRegistro}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="190" width="200" height="20" uuid="1405e56e-a56d-45f1-933a-cb7b301ad24a"/>
+				<textFieldExpression><![CDATA["Genero: "+$F{Genero}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="239" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="10" width="100" height="20" uuid="37ba264c-52dd-48b8-af25-5c5f0a899a59"/>
+				<textElement>
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Incidentes:]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="90" y="40" width="167" height="69" uuid="013e4397-5ae9-41a8-a65b-2aee6f8cbf87"/>
+				<c:map xmlns:c="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<c:latitudeExpression><![CDATA[45.433968f]]></c:latitudeExpression>
+					<c:longitudeExpression><![CDATA[12.337967f]]></c:longitudeExpression>
+					<c:zoomExpression><![CDATA[8]]></c:zoomExpression>
+					<c:markerData>
+						<dataset/>
+					</c:markerData>
+				</c:map>
+			</componentElement>
+			<componentElement>
+				<reportElement x="320" y="40" width="170" height="69" uuid="6cddf25f-2a3c-460b-932e-28709142fe66"/>
+				<c:map xmlns:c="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<c:latitudeExpression><![CDATA[45.433968f]]></c:latitudeExpression>
+					<c:longitudeExpression><![CDATA[12.337967f]]></c:longitudeExpression>
+					<c:zoomExpression><![CDATA[8]]></c:zoomExpression>
+					<c:markerData>
+						<dataset/>
+					</c:markerData>
+				</c:map>
+			</componentElement>
+		</band>
+	</columnHeader>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

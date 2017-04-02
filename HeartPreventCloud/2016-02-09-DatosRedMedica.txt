@@ -1,0 +1,282 @@
+use redmedica;
+
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('1', 'Acidez estomacal');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('2', 'Ansiedad');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('3', 'Asma');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('4', 'Arritmias');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('5', 'Artritis');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('6', 'Ataxia');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('7', 'Bulimia');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('8', 'Cancer de Higado');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('9', 'Cancer de Piel');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('10', 'Cancer de Vejiga');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('11', 'Celiquia');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('12', 'Cancer de Colon');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('13', 'Cancer de Mama');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('14', 'Cancer de Prostata');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('15', 'Cancer de Cuello de Utero');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('16', 'Cancer de Ovarios');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('17', 'Cancer de Pulmon');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('18', 'Cancer de Estomago');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('19', 'Cancer de Testiculo');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('20', 'Cancer de Pancreas');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('21', 'Conjunjivitis');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('22', 'Coronavirus');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('23', 'Cataratas');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('24', 'Cirrosis');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('25', 'Colera');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('26', 'Diabetes T1 id');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('27', 'Diabetes T2 nid');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('28', 'Diabetes gestacional');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('29', 'Difteria');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('30', 'Diarrea');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('31', 'Dislexia');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('32', 'Desprendimiento de Retina');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('33', 'Ebola');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('34', 'Epoc');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('35', 'Espondillitis');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('36', 'Estreñimiento');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('37', 'Essema');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('38', 'Esquizofrenia');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('39', 'Esclerosis multiple');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('40', 'Esterilidad');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('41', 'Embolia pulmonar');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('42', 'Efisema');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('43', 'Epilepsia');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('44', 'Fibrosis pulmonar');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('45', 'Fiebre Tifoidea');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('46', 'Fiebre Amarilla');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('47', 'Glaucoma');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('48', 'Gota');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('49', 'Amenorrea');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('50', 'Dismenorrea');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('51', 'Hemorragias Ginecologicas');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('52', 'Hipercolesterolemia');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('53', 'Hipertension Arterial');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('54', 'Hongos');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('55', 'Hepatitis A');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('56', 'Hepatitis B');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('57', 'Hepatitis C');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('58', 'Hipotension');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('59', 'Hipermetropia');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('60', 'Hipotiroidismo');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('61', 'Ipotencia');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('62', 'Incontinencia urinaria');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('63', 'Infarto de miocardio');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('64', 'Infeccion urinaria');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('65', 'Insomnio');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('66', 'Ictus');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('67', 'Lucemia');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('68', 'Linfoma');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('69', 'Lupus');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('70', 'Melanoma');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('71', 'Melanoma Metastásico');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('72', 'Migraña');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('73', 'Miocardiopatia');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('74', 'Neumonia');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('75', 'Obesidad');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('76', 'Osteoporosis');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('77', 'Neumotorax');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('78', 'Narcolepsia');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('79', 'Pies planos');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('80', 'Parkinson');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('81', 'Pies cavos');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('82', 'Retinopatia diabetica');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('83', 'Sarampion');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('84', 'Sida');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('85', 'Sindrome de Down');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('86', 'Sindrome de estres postraumatico');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('87', 'Sindrome de Wolfram');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('88', 'Torticolis');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('89', 'Transtorno de conducta del sueño');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('90', 'Transtorno del ritmo cardiaco');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('91', 'Transtorno de menstruacion');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('92', 'Tuberculosis');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('93', 'Transtorno obsesivo compulsivo');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('94', 'Tumores cerebrales');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('95', 'Urticaria');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('96', 'Varicela');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('97', 'Vigorexia');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('98', 'Vegetaciones');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('99', 'Artrosis');
+INSERT INTO `redmedica`.`enfermedades` (`idenfermedades`, `Enfermedad`) VALUES ('100', 'Fibromialgia');
+
+###############################################################################################################################################
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('1', 'halothano');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('2', 'ketamina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('3', 'oxido nitroso');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('4', 'tiopental');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('5', 'bupivacaina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('6', 'lidocaina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('7', 'epinefrina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('8', 'efedrina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('9', 'atropina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('10', 'diazepam');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('11', 'morfina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('12', 'prometazina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('13', 'acido acetilsalicilico');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('14', 'iboprufeno');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('15', 'paracetamol');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('16', ' codeina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('17', 'alopurino');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('18', 'cloroquina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('19', 'azatriopina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('20', 'metotrexato');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('21', 'penicilamina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('22', 'sulfasalazina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('23', 'clorfenamina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('24', 'dexametasona');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('25', 'hidrocortisona');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('26', 'prednisolona');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('27', 'cloruro de metiltionino');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('28', 'deferoxamina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('29', 'DL-metionina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('30', 'edetato de calcio');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('31', 'edetato de sodio');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('32', 'gluconato de calcio');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('33', 'naloxona');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('34', 'nitrito de sodio');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('35', 'tiosulfato de sodio');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('36', 'acido valproico');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('37', 'carbamazepina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('39', 'fenitiona');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('40', 'fenobarbital');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('41', 'sulfato de magnesio');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('42', 'etosuximida');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('43', 'albendazol');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('44', 'levamisol');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('45', 'mebandazol');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('46', 'niclosamida');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('47', 'pirantel');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('48', 'prazicuantel');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('49', 'ivermectina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('50', 'dietilcarbamazina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('51', 'suramida sodica');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('52', 'triclabendazol');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('53', 'oxamniquina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('54', 'amoxilina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('55', 'acido clavulanico');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('56', 'ampicilina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('57', 'bencilpenicilina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('58', 'bencilpenicilina benzatina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('59', 'bencilpenicilina procaina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('60', 'cefazolina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('61', 'cefixima');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('62', 'cloxacilina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('63', 'fenoximetilpenicilina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('64', 'azitomicina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('65', 'ciprofloxanico');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('66', 'doxilina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('67', 'eritromicina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('68', 'espectomicina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('69', 'gentamicina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('70', 'metronidazol');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('71', 'dapsona');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('72', 'rifampicina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('73', 'clorotimazol');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('74', 'flucozanol');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('75', 'nistatina');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('76', 'aciclovir');
+INSERT INTO `redmedica`.`medicamentos` (`idMedicamentos`, `Medicamento`) VALUES ('77', 'abacavir');
+##################################################################################################################################
+
+
+
+INSERT INTO `redmedica`.`estado` (`idEstado`, `Estado`) VALUES ('1', 'Correo de confirmacion no enviado');
+INSERT INTO `redmedica`.`estado` (`idEstado`, `Estado`) VALUES ('2', 'activo');
+INSERT INTO `redmedica`.`estado` (`idEstado`, `Estado`) VALUES ('3', 'inactivo');
+INSERT INTO `redmedica`.`estado` (`idEstado`, `Estado`) VALUES ('4', 'En espera de confirmacion');
+
+
+INSERT INTO `redmedica`.`categoria` (`idcategoria`, `categoria`) VALUES ('1', 'standar');
+INSERT INTO `redmedica`.`categoria` (`idcategoria`, `categoria`) VALUES ('2', 'premium');
+INSERT INTO `redmedica`.`tipopersona` (`idTipoPersona`, `Tipo`) VALUES ('1', 'Usuario');
+INSERT INTO `redmedica`.`tipopersona` (`idTipoPersona`, `Tipo`) VALUES ('2', 'Doctor');
+INSERT INTO `redmedica`.`tipopersona` (`idTipoPersona`, `Tipo`) VALUES ('3', 'admin');
+
+INSERT INTO `redmedica`.`pulsera` (`idpulsera`) VALUES ('1');
+INSERT INTO `redmedica`.`pulsera` (`idpulsera`) VALUES ('2');
+INSERT INTO `redmedica`.`pulsera` (`idpulsera`) VALUES ('3');
+INSERT INTO `redmedica`.`pulsera` (`idpulsera`) VALUES ('4');
+INSERT INTO `redmedica`.`pulsera` (`idpulsera`) VALUES ('5');
+INSERT INTO `redmedica`.`pulsera` (`idpulsera`) VALUES ('6');
+INSERT INTO `redmedica`.`pulsera` (`idpulsera`) VALUES ('7');
+INSERT INTO `redmedica`.`pulsera` (`idpulsera`) VALUES ('8');
+INSERT INTO `redmedica`.`pulsera` (`idpulsera`) VALUES ('9');
+INSERT INTO `redmedica`.`pulsera` (`idpulsera`) VALUES ('10');
+
+INSERT INTO `redmedica`.`puntuacion` (`idpuntuacion`, `puntuacion`) VALUES ('1', 'positiva');
+INSERT INTO `redmedica`.`puntuacion` (`idpuntuacion`, `puntuacion`) VALUES ('2', 'negativa');
+INSERT INTO `redmedica`.`tiporelusuarios` (`idtiporelusuarios`, `tiporelusuarios`) VALUES ('1', 'usuario-usuario');
+INSERT INTO `redmedica`.`tiporelusuarios` (`idtiporelusuarios`, `tiporelusuarios`) VALUES ('2', 'usuario-doctor');
+INSERT INTO `redmedica`.`tiporelusuarios` (`idtiporelusuarios`, `tiporelusuarios`) VALUES ('3', 'doctor-doctor');
+INSERT INTO `redmedica`.`tiporelusuarios` (`idtiporelusuarios`, `tiporelusuarios`) VALUES ('4', 'doctorCabecera-paciente');
+##mail: searlese@hotmail.com
+#pass: contra
+
+call validapuls(1,'Sergio','f72b8794d3f268f4f770e8aaa0a6e71f0ff06a56','BI8X9SLrQqpnSJdRGrD194wqKGCCOgQ/X5SdbgeciQ0=','1997-08-15','M','75','1.8','CZSQwku/qpHN5lz6woIC8A==','2','sin','Sánchez','1','1','',0,'quechow');
+call usuenfer(1,'amenorrea');
+
+#mail: ats@h.com
+call validapuls(1,'Angel','f72b8794d3f268f4f770e8aaa0a6e71f0ff06a56','/l4ok4ZcgNPSA6ns5XWEdQ==','1998-09-15','M','75','1.8','CZSQwku/qpHN5lz6woIC8A==','2','fresas','Cordoba','1','2','',0,'quechow');
+call usuenfer(2,'asma');
+
+#jyhael97@gmail.com
+call validapuls(1,'Yhael','f72b8794d3f268f4f770e8aaa0a6e71f0ff06a56','eKHjjd3n6512hOhcZ8x+QzVBcW3Gz+BpuM7XNAqKU48=','1998-09-15','M','75','1.8','CZSQwku/qpHN5lz6woIC8A==','2','fresas','Jacinto','1','3','',0,'quechow');
+
+
+#buchaca001@hotmail.es
+call validapuls(1,'Brandon','f72b8794d3f268f4f770e8aaa0a6e71f0ff06a56','iuVlgzhJKC38rF3DACEe7FTP3sdNuhPJTR8bqrVZQqo=','1998-09-15','M','75','1.8','CZSQwku/qpHN5lz6woIC8A==','2','fresas','Chavez','1','4','',0,'quechow');
+
+#cesargabino123@hotmail.com
+call validapuls(1,'Cesar','f72b8794d3f268f4f770e8aaa0a6e71f0ff06a56','F0rLFR90SETNGf26wMIc/HWe/+1AwiVTKx9xbtN8Qec=','1998-09-15','M','75','1.8','CZSQwku/qpHN5lz6woIC8A==','2','fresas','Juarez','1','5','',0,'quechow');
+#prueba@h.com
+call edicionusu(0,2,'Prueba','f72b8794d3f268f4f770e8aaa0a6e71f0ff06a56','rGg1OqNtRJARWzMqUcpLQA==','1998-09-15','M','75','1.8','CZSQwku/qpHN5lz6woIC8A==','1','fresas','Juarez','1','0','',0,'quechow');
+
+INSERT INTO `redmedica`.`relpersonatipo` (`idRelPersonaTipo`, `idUsuario`, `idtipo`) VALUES ('8', '1', '2');
+INSERT INTO `redmedica`.`relpersonatipo` (`idRelPersonaTipo`, `idUsuario`, `idtipo`) VALUES ('9', '1', '3');
+
+INSERT INTO `redmedica`.`presion` (`idpresion`, `presion`) VALUES ('1', '50');
+INSERT INTO `redmedica`.`presion` (`idpresion`, `presion`) VALUES ('2', '60');
+INSERT INTO `redmedica`.`presion` (`idpresion`, `presion`) VALUES ('3', '70');
+INSERT INTO `redmedica`.`presion` (`idpresion`, `presion`) VALUES ('4', '80');
+INSERT INTO `redmedica`.`presion` (`idpresion`, `presion`) VALUES ('5', '90');
+INSERT INTO `redmedica`.`presion` (`idpresion`, `presion`) VALUES ('6', '100');
+
+INSERT INTO `redmedica`.`relusupresion` (`idRelUsuPresion`, `idusuario`, `idpresion`, `fecha`) VALUES ('1', '3', '2', '2015-12-04');
+INSERT INTO `redmedica`.`relusupresion` (`idRelUsuPresion`, `idusuario`, `idpresion`, `fecha`) VALUES ('2', '3', '1', '2015-12-09');
+INSERT INTO `redmedica`.`relusupresion` (`idRelUsuPresion`, `idusuario`, `idpresion`, `fecha`) VALUES ('3', '3', '3', '2015-12-06');
+INSERT INTO `redmedica`.`relusupresion` (`idRelUsuPresion`, `idusuario`, `idpresion`, `fecha`) VALUES ('4', '3', '5', '2015-12-07');
+INSERT INTO `redmedica`.`relusupresion` (`idRelUsuPresion`, `idusuario`, `idpresion`, `fecha`) VALUES ('5', '3', '2', '2015-12-08');
+INSERT INTO `redmedica`.`relusupresion` (`idRelUsuPresion`, `idusuario`, `idpresion`, `fecha`) VALUES ('6', '3', '2', '2015-11-08');
+INSERT INTO `redmedica`.`relusupresion` (`idRelUsuPresion`, `idusuario`, `idpresion`, `fecha`) VALUES ('7', '3', '2', '2015-11-09');
+INSERT INTO `redmedica`.`relusupresion` (`idRelUsuPresion`, `idusuario`, `idpresion`, `fecha`) VALUES ('8', '1', '2', '2015-10-04');
+INSERT INTO `redmedica`.`relusupresion` (`idRelUsuPresion`, `idusuario`, `idpresion`, `fecha`) VALUES ('9', '1', '1', '2015-10-05');
+INSERT INTO `redmedica`.`relusupresion` (`idRelUsuPresion`, `idusuario`, `idpresion`, `fecha`) VALUES ('10', '1', '3', '2015-10-15');
+INSERT INTO `redmedica`.`relusupresion` (`idRelUsuPresion`, `idusuario`, `idpresion`, `fecha`) VALUES ('11', '2', '5', '2015-11-07');
+INSERT INTO `redmedica`.`relusupresion` (`idRelUsuPresion`, `idusuario`, `idpresion`, `fecha`) VALUES ('12', '4', '2', '2015-11-08');
+INSERT INTO `redmedica`.`relusupresion` (`idRelUsuPresion`, `idusuario`, `idpresion`, `fecha`) VALUES ('13', '3', '2', '2015-11-04');
+INSERT INTO `redmedica`.`relusupresion` (`idRelUsuPresion`, `idusuario`, `idpresion`, `fecha`) VALUES ('14', '3', '1', '2015-10-05');
+INSERT INTO `redmedica`.`relusupresion` (`idRelUsuPresion`, `idusuario`, `idpresion`, `fecha`) VALUES ('15', '3', '3', '2015-10-15');
+INSERT INTO `redmedica`.`relusupresion` (`idRelUsuPresion`, `idusuario`, `idpresion`, `fecha`) VALUES ('16', '2', '5', '2015-11-07');
+INSERT INTO `redmedica`.`relusupresion` (`idRelUsuPresion`, `idusuario`, `idpresion`, `fecha`) VALUES ('17', '1', '2', '2015-11-08');
+
+INSERT INTO `redmedica`.`enfermusu` (`idRelEnfermedadesUsuario`, `idUsuario`, `Enfermedad`) VALUES ('3', '3', '22');
+INSERT INTO `redmedica`.`enfermusu` (`idRelEnfermedadesUsuario`, `idUsuario`, `Enfermedad`) VALUES ('4', '3', '10');
+
+select * from persona;
+#call friends('1','1','2');
+#call friends('1','1','3');
+#call friends('1','1','4');
+#call friends('1','1','5');
+#call friends('1','2','3');
+#call friends('0','1','0');
+#call friends('1','1','6');
+/*
+select * from categoria;
+select * from 	persona;
+select * from relpersonatipo;
+select * from relusuarios;
+select * from relusupulsera;
+select * from pulsera;
+BI8X9SLrQqpnSJdRGrD194wqKGCCOgQ/X5SdbgeciQ0=contra

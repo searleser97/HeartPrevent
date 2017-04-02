@@ -1,0 +1,8 @@
+{
+    "js": {
+        "space_after_anon_function": true,
+        "end_with_newline": true,
+        "max_preserve_newlines": 1,
+        "indent_size": "2"
+    }
+}

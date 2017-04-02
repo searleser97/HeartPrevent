@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="618.0" prefWidth="800.0" styleClass="fondoM" stylesheets="@../CSS/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="heartPrevent.MenuController">
+    <children>
+        <StackPane fx:id="contentPane" layoutX="19.0" layoutY="29.0" onDragDropped="#mouseDragDropped" onDragOver="#mouseDragOver" prefHeight="112.0" prefWidth="193.0">
+            <children>
+                <ImageView fx:id="imgUser" cache="true" fitHeight="115.0" fitWidth="193.0" pickOnBounds="true" preserveRatio="true" />
+            </children>
+        </StackPane>
+        <MenuBar minHeight="23.0" prefHeight="25.0" prefWidth="831.0" useSystemMenuBar="false">
+            <menus>
+                <Menu mnemonicParsing="false" text="Ver">
+                    <items>
+                        <MenuItem fx:id="conf" mnemonicParsing="false" onAction="#handleButtonAction3" text="Ajustes">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="A" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem fx:id="opcSync" mnemonicParsing="false" onAction="#handleButtonAction4" text="Opciones de Sincronizacion">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem fx:id="verCar" mnemonicParsing="false" onAction="#verCarp" text="Carpeta de HeartCloud">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                  <MenuItem fx:id="chat" mnemonicParsing="false" onAction="#abrirChat" text="Chat">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="M" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem fx:id="linkPagNosotros" mnemonicParsing="false" onAction="#linkNosotros" text="About">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="W" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Exit">
+                    <items>
+                        <MenuItem fx:id="cerrarS" mnemonicParsing="false" onAction="#handleButtonAction1" text="Cerrar Sesion">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="C" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#handleButtonAction2" text="Salir">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="E" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Label fx:id="name" layoutX="237.0" layoutY="47.0" prefHeight="17.0" prefWidth="193.0" text="Nombre:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="correoL" layoutX="237.0" layoutY="97.0" prefHeight="20.0" prefWidth="289.0" text="Correo:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="enf" alignment="TOP_LEFT" contentDisplay="CENTER" ellipsisString="" layoutX="538.0" layoutY="45.0" prefHeight="24.0" prefWidth="205.0" text="Enfermedades: " textFill="WHITE" textOverrun="CLIP" wrapText="true">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="sexo" layoutX="538.0" layoutY="97.0" prefHeight="20.0" prefWidth="180.0" text="Genero:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Hyperlink fx:id="linkEnf" layoutX="677.0" layoutY="43.0" onAction="#masEnfer" text="Ver">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Hyperlink>
+        <TabPane layoutX="-2.0" layoutY="147.0" prefHeight="497.0" prefWidth="832.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Mis Archivos ">
+                    <content>
+                        <AnchorPane id="Content" prefHeight="452.0" prefWidth="799.0" stylesheets="@../CSS/styles.css">
+                            <children>
+                                <Label layoutX="10.0" layoutY="14.0" text="Para subir, arrastra y suelta el archivo en la tabla." textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="buscarText" alignment="CENTER" layoutX="574.0" layoutY="10.0" onKeyReleased="#buscar" prefHeight="28.0" prefWidth="205.0" promptText="Busqueda" />
+                                <Label fx:id="textoSoltar" layoutX="441.0" layoutY="10.0" prefHeight="28.0" prefWidth="133.0" text="Suelta el archivo" textFill="#1cbf1c" visible="false">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                                <Button layoutX="10.0" layoutY="71.0" mnemonicParsing="false" onAction="#recharge" prefHeight="49.0" prefWidth="49.0" styleClass="imgAct" stylesheets="@../CSS/styles.css" />
+                                <Pagination id="pagination" fx:id="pages" currentPageIndex="5" layoutX="59.0" layoutY="409.0" prefHeight="35.0" prefWidth="715.0" stylesheets="@../CSS/styles.css" />
+                                <TableView fx:id="tablaNube" blendMode="SRC_OVER" disable="false" editable="true" layoutX="66.0" layoutY="49.0" onDragDropped="#mouseDragDropped2" onDragEntered="#mouseDragEntered" onDragExited="#mouseDragExited" onDragOver="#mouseDragOver2" onKeyPressed="#elimina" prefHeight="362.0" prefWidth="708.0" stylesheets="@../CSS/styles.css" tableMenuButtonVisible="true">
+                                    <columns>
+                                        <TableColumn fx:id="type" editable="false" prefWidth="64.0" sortable="false" text="Tipo" />
+                                        <TableColumn fx:id="nombreA" editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="242.0" text="Archivos" />
+                                        <TableColumn fx:id="fechaA" editable="false" prefWidth="163.0" text="Fecha" />
+                                        <TableColumn fx:id="sizeA" editable="false" minWidth="0.0" prefWidth="151.0" text="Tamaño (KB)" />
+                                        <TableColumn fx:id="linkVer" editable="false" minWidth="0.0" prefWidth="60.0" sortable="false" text="Ver" />
+                                    </columns>
+                                </TableView>
+<!--                                <ChoiceBox fx:id="limitVer" layoutX="687.0" layoutY="415.0" prefHeight="25.0" prefWidth="87.0">
+                                    <items>
+                                        <FXCollections fx:factory="observableArrayList">
+                                            <String fx:value="5"/>
+                                            <String fx:value="10"/>
+                                            <String fx:value="15"/>
+                                            <String fx:value="20"/>
+                                        </FXCollections>
+                                    </items>
+                                </ChoiceBox>-->
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Historiales Clinicos (Respaldos)">
+                    <content>
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="425.0" prefWidth="814.0">
+                            <children>
+                                <TableView fx:id="tablaNube1" blendMode="SRC_OVER" cache="false" disable="false" editable="true" focusTraversable="false" layoutX="195.0" layoutY="37.0" mouseTransparent="false" prefHeight="407.0" prefWidth="579.0" stylesheets="@../CSS/styles.css" tableMenuButtonVisible="true" visible="true">
+                                    <columns>
+                                        <TableColumn fx:id="type1" editable="false" prefWidth="69.0" sortable="false" text="Tipo" />
+                                        <TableColumn fx:id="nombreA1" maxWidth="5000.0" minWidth="10.0" prefWidth="194.0" text="Archivos" />
+                                        <TableColumn fx:id="fechaA1" prefWidth="118.0" text="Fecha" />
+                                        <TableColumn fx:id="sizeA1" editable="false" prefWidth="124.0" text="Tamaño" />
+                                        <TableColumn fx:id="linkVer1" editable="false" minWidth="1.0" prefWidth="55.0" sortable="false" text="Ver" />
+                                    </columns>
+                                </TableView>
+                                <ListView fx:id="listpacientes" layoutX="14.0" layoutY="36.0" prefHeight="408.0" prefWidth="172.0" />
+                        <Label layoutX="14.0" layoutY="2.0" prefHeight="24.0" prefWidth="289.0" text="Seleccione un Correo para ver sus Archivos" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Graficas PPM">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <LineChart fx:id="graphDatos" alternativeColumnFillVisible="true" animated="false" focusTraversable="true" layoutX="130.0" layoutY="67.0" mouseTransparent="true" prefHeight="354.0" prefWidth="562.0" style="-fx-background-color: white;" title="PPM Monitoring">
+                                    <xAxis>
+                                        <CategoryAxis side="BOTTOM" />
+                                    </xAxis>
+                                    <yAxis>
+                                        <NumberAxis side="LEFT" />
+                                    </yAxis>
+                                </LineChart>
+                                <ChoiceBox fx:id="mesCB" layoutX="30.0" layoutY="23.0" prefWidth="150.0">
+                                    <items>
+                                        <FXCollections fx:factory="observableArrayList">
+                                            <String fx:value="1" />
+                                            <String fx:value="2" />
+                                            <String fx:value="3" />
+                                            <String fx:value="4" />
+                                            <String fx:value="5" />
+                                            <String fx:value="6" />
+                                            <String fx:value="7" />
+                                            <String fx:value="8" />
+                                            <String fx:value="9" />
+                                            <String fx:value="10" />
+                                            <String fx:value="11" />
+                                            <String fx:value="12" />
+                                        </FXCollections>
+                                    </items>
+                                </ChoiceBox>
+                                <ChoiceBox fx:id="anoCB" layoutX="201.0" layoutY="23.0" prefHeight="25.0" prefWidth="107.0">
+                                    <items>
+                                        <FXCollections fx:factory="observableArrayList">
+                                            <String fx:value="2015" />
+                                            <String fx:value="2016" />
+                                        </FXCollections>
+                                    </items>
+                                </ChoiceBox>
+                        <Label layoutX="389.0" layoutY="100.0" text="Dia">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="69.0" layoutY="224.0" text="Presión">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            <Tab text="Grafica  PPM(En Vivo) ">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <LineChart fx:id="graficaAhorita" layoutX="134.0" layoutY="38.0" prefHeight="398.0" prefWidth="590.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                        <Button layoutX="35.0" layoutY="127.0" mnemonicParsing="false" onAction="#ponerPlay" prefHeight="24.0" prefWidth="86.0" text="Play" />
+                        <Button layoutX="35.0" layoutY="185.0" mnemonicParsing="false" onAction="#ponerPausa" prefHeight="28.0" prefWidth="86.0" text="Stop" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</Pane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="330.0" prefWidth="444.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chat.Chat">
+    <children>
+        <Button fx:id="button" layoutX="368.0" layoutY="291.0" onAction="#enviarButton" text="Enviar!" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TextArea fx:id="panMostrar" editable="false" layoutX="119.0" layoutY="47.0" prefHeight="237.0" prefWidth="308.0" stylesheets="@../chat/chat.css" wrapText="true" />
+      <TextField fx:id="txtMensaje" layoutX="116.0" layoutY="291.0" onKeyPressed="#enviarButtonEnter" onKeyReleased="#enviarButtonEnter" onKeyTyped="#enviarButtonEnter" prefHeight="25.0" prefWidth="252.0" promptText="Escriba aqui" />
+      <ListView fx:id="lstActivos" layoutX="7.0" layoutY="79.0" prefHeight="205.0" prefWidth="111.0" />
+      <Label fx:id="lblNomUser" layoutX="126.0" layoutY="6.0" prefHeight="17.0" prefWidth="232.0" />
+      <Button fx:id="p" layoutX="14.0" layoutY="291.0" mnemonicParsing="false" onAction="#desconectar" prefHeight="25.0" prefWidth="86.0" text="Salir" />
+      <Label fx:id="ultConexion" layoutX="126.0" layoutY="23.0" prefHeight="17.0" prefWidth="301.0" />
+      <ImageView fx:id="imgFriend" fitHeight="70.0" fitWidth="111.0" layoutX="7.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
+    </children>
+</AnchorPane>

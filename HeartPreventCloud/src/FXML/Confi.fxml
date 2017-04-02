@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="391.0" prefWidth="516.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="heartPrevent.ConfController">
+  <children>
+    <MenuBar layoutX="0.0" layoutY="0.0" minHeight="23.0" prefHeight="24.0" prefWidth="533.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem fx:id="linkHelp" mnemonicParsing="false" onAction="#help" text="Help">
+<!--                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="H" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>-->
+            </MenuItem>
+                  <MenuItem fx:id="linkPagNosotros1" mnemonicParsing="false" onAction="#linkNosotros" text="About">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="A" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <TabPane layoutY="24.0" prefHeight="391.0" prefWidth="533.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="Ajustes">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="337.0" prefWidth="521.0" styleClass="fondo1" stylesheets="@../CSS/styles.css">
+              <children>
+                <CheckBox fx:id="inicioOn" layoutX="198.0" layoutY="82.0" mnemonicParsing="false" text="Iniciar HeartCloud al arrancar el sistema" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font></CheckBox>
+                <Button layoutX="183.0" layoutY="291.0" mnemonicParsing="false" onAction="#handleButtonAction1" prefHeight="27.0" prefWidth="168.0" styleClass="inicio" stylesheets="@../CSS/styles.css" text="Guardar Configuracion" />
+                <Label fx:id="totalMB" layoutX="46.0" layoutY="199.0" prefHeight="20.0" prefWidth="209.0" text="Se ha utilizado" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                <Label fx:id="correoU" layoutX="46.0" layoutY="231.0" text="Correo de la cuenta" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                <ProgressIndicator fx:id="tamanoCuenta" layoutX="43.0" layoutY="33.0" prefHeight="117.0" prefWidth="112.0" />
+                        <Hyperlink alignment="CENTER" layoutX="218.0" layoutY="122.0" onAction="#terminosCond" prefHeight="23.0" prefWidth="242.0" text="Ver Terminos y Condiciones" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Hyperlink>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>

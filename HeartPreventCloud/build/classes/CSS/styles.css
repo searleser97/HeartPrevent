@@ -1,0 +1,63 @@
+
+.fondoL{
+    -fx-background-image: url("../img/CorazonGota2.jpg");
+    -fx-background-repeat: no-repeat;    
+}
+.fondoM{
+    -fx-background-image: url("../img/Background-Graphics-Medical-I-72249538.jpg") ;
+    -fx-background-repeat: repeat-x;
+}
+.fondoM2{
+    -fx-background-color:#4A5981;
+}
+.fondo1{
+    -fx-background-image: url("../img/Heart_Points.png");
+}
+.fondo2{
+    -fx-background-image: url("../img/conf.png");
+}
+.inicio{
+    -fx-background-color:#0C7F9F;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.imgPerfil{
+    -fx-margin-left: 7px;
+    -fx-border-radius: 150px;
+}
+.imgBorrar{
+    -fx-background-image: url("../img/delete.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 100;
+}
+.imgAct{
+    -fx-background-image: url("../img/recargar.png");
+    -fx-background-color:#344880;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 100;
+}
+.fondoBlanco{
+    -fx-background-color:#FFFFFF;
+}
+.sync{
+    -fx-background-color:#098882
+        radial-gradient(center 50% 50%, radius 100%, #d86e3a, #c54e2c);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+.envia{
+    -fx-background-image: url("../img/filesend.png");
+     -fx-background-color:#344880;
+     -fx-background-radius: 100;
+}
+
+.pagination {
+    -fx-page-information-visible: false;
+}

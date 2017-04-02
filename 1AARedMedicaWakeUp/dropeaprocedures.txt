@@ -1,0 +1,3 @@
+SELECT
+    CONCAT('DROP ','procedure',' `','prograbatiz_heartprevent','`.`',ROUTINE_NAME,'`;') as stmt
+FROM information_schema.ROUTINES;

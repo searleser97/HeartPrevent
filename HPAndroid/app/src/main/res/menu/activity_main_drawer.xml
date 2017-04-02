@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/blog"
+            android:icon="@drawable/file_text"
+            android:title="Blog" />
+        <item
+            android:id="@+id/contactos"
+            android:icon="@drawable/users"
+            android:title="Contactos" />
+        <item
+            android:id="@+id/medicamentos"
+            android:icon="@drawable/alarm"
+            android:title="Medicamentos" />
+        <item
+            android:id="@+id/notificaciones"
+            android:icon="@drawable/ic_notifications_on_24dp"
+            android:title="Emergencias" />
+        <item
+            android:id="@+id/configuraciones"
+            android:icon="@drawable/ic_settings_24dp"
+            android:title="Configuraciones" />
+
+        <item
+            android:id="@+id/pulsera"
+            android:icon="@drawable/ic_bluetooth"
+            android:title="PulseraHP"/>
+
+        <item
+            android:id="@+id/cerrarsesion"
+            android:icon="@drawable/ic_input_24dp"
+            android:title="Salir" />
+
+    </group>
+
+    <item android:title="Comparte">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="261.0" prefWidth="402.0" styleClass="fondo2" stylesheets="@../CSS/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="heartPrevent.SyncController">
+    <children>
+        <RadioButton fx:id="todo" layoutX="51.0" layoutY="142.0" mnemonicParsing="false" text="Sincronizar Todo" textAlignment="LEFT" textOverrun="CLIP" wrapText="false">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </RadioButton>
+        <RadioButton id="nada" fx:id="no" layoutX="229.0" layoutY="142.0" mnemonicParsing="false" selected="true" text="No sincronizar">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </RadioButton>
+        <Button alignment="CENTER" layoutX="168.0" layoutY="203.0" mnemonicParsing="false" onAction="#guardar" styleClass="sync" stylesheets="@../CSS/styles.css" text="Guardar" textAlignment="CENTER" />
+        <Button fx:id="ubicacionSync" layoutX="308.0" layoutY="65.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Buscar" />
+        <TextField fx:id="pathSync" editable="false" layoutX="43.0" layoutY="65.0" prefHeight="25.0" prefWidth="249.0" promptText="Carpeta para descargar archivos" />
+        <MenuBar layoutX="0.0" layoutY="0.0" minHeight="20.0" prefHeight="25.0" prefWidth="402.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Ayuda">
+                    <items>
+                        <MenuItem fx:id="linkPagNosotros" mnemonicParsing="false" onAction="#linkNosotros" text="About">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="A" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Label layoutX="180.0" layoutY="36.0" text="Ubicacion">
+            <font>
+                <Font name="Arial Bold" size="12.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

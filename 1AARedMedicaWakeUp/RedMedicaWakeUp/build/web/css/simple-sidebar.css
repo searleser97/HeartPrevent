@@ -1,0 +1,179 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+.okas{
+    display: block;
+}
+#wrapper {
+    padding-left: 0;
+}
+
+
+#sidebar-wrapper {
+    margin-top: 50px;
+    z-index: 999999991;
+    position: fixed;
+    left: -180px;
+    width: 180px;
+    height: 100%;
+    overflow-y: auto;
+    background: #006064;
+    transition: left 0.3s;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 180px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+
+    text-align: right;
+    line-height: 0px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 0;
+    }
+    #sidebar-wrapper { 
+        width: 180px;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+}
+
+.submenuside{
+    transition: height 0.2s;
+    height: 0;
+    overflow: hidden;
+    padding-left: 0;
+    list-style: none;
+    text-decoration: none;
+    background: #455A64;
+    color: white;
+    height: 0;
+}
+
+.submenuside.toggled{
+    height: 120px;
+}
+.submenuside li:hover{
+    text-decoration: none;
+    color: #fff;
+}
+::-webkit-scrollbar-track-piece:start {
+    /* Select the top half (or left half) or scrollbar track individually */
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    /* Select the thumb when the browser window isn't in focus */
+}
+
+::-webkit-scrollbar-button:horizontal:decrement:hover {
+    /* Select the down or left scroll button when it's being hovered by the mouse */
+}
+
+@font-face {
+    font-family: 'RequestIcons';
+
+    src: url('../fonts/icomoon.eot');
+    src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('../fonts/icomoon.woff') format('woff'), url('../fonts/icomoon.ttf') format('truetype'), url('../fonts/icomoon.svg#icomoon') format('svg');
+}
+.icomoon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'RequestIcons';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-user-plus:before {
+    content: "\e901";
+}
+
+.icon-user-minus:before {
+    content: "\e902";
+}
+
+.icon-user-check:before {
+    content: "\e903";
+}
+
+.icon-folder-plus:before {
+    content: "\e935";
+}
+
+.icon-bubbles2:before {
+    content: "\e970";
+}
+.icon-file-text2:before {
+    content: "\e92a";
+}
+
+.heart:before{
+    content: "\e9da";
+}
+
+.icon-question:before {
+    content: "\ea09";
+}
+
+.icon-camera:before {
+    content: "\e913";
+}
